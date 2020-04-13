@@ -12,7 +12,6 @@
 <script>
 import EmployeeTable from '@/components/EmployeeTable.vue';
 import EmployeeForm from '@/components/EmployeeForm.vue';
-
 export default {
   name: 'App',
   data(){
@@ -37,7 +36,6 @@ export default {
         console.error(error)
       }
     },
-
     async addEmployee(employee) {
       try {
         const response = await fetch('https://jsonplaceholder.typicode.com/users', {
@@ -65,7 +63,6 @@ export default {
         console.error(error)
       }
     },
-
     async deleteEmployee(id) {
       try {
         await fetch(`https://jsonplaceholder.typicode.com/users/${id}`, {
@@ -78,7 +75,6 @@ export default {
     },
   },
 }
-
 </script>
 
 <style>
@@ -86,7 +82,6 @@ export default {
     background: #009435;
     border: 1px solid #009435;
   }
-
   .small-container {
     max-width: 680px;
   }
